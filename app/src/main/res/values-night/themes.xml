@@ -1,0 +1,7 @@
+<resources>
+
+	<style name="AppTheme" parent="DarkAppTheme" />
+	
+	<style name="AppTheme.NavigationOverlay" parent="DarkAppTheme.NavigationOverlay" />
+
+</resources>

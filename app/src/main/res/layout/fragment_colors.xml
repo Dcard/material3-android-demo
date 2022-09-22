@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<com.google.android.material.appbar.MaterialToolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?actionBarSize"
+			android:elevation="0dp"
+			app:title="@string/colors.main.title" />
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<com.google.android.flexbox.FlexboxLayout
+			android:id="@+id/contentLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:flexWrap="wrap">
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorPrimary"
+				android:text="@string/colors.item_primary.description"
+				android:textColor="?colorOnPrimary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnPrimary"
+				android:text="@string/colors.item_on_primary.description"
+				android:textColor="?colorPrimary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorPrimaryContainer"
+				android:text="@string/colors.item_primary_container.description"
+				android:textColor="?colorOnPrimaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnPrimaryContainer"
+				android:text="@string/colors.item_on_primary_container.description"
+				android:textColor="?colorPrimaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorSecondary"
+				android:text="@string/colors.item_secondary.description"
+				android:textColor="?colorOnSecondary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnSecondary"
+				android:text="@string/colors.item_on_secondary.description"
+				android:textColor="?colorSecondary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorSecondaryContainer"
+				android:text="@string/colors.item_secondary_container.description"
+				android:textColor="?colorOnSecondaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnSecondaryContainer"
+				android:text="@string/colors.item_on_secondary_container.description"
+				android:textColor="?colorSecondaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorTertiary"
+				android:text="@string/colors.item_tertiary.description"
+				android:textColor="?colorOnTertiary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnTertiary"
+				android:text="@string/colors.item_on_tertiary.description"
+				android:textColor="?colorTertiary"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorTertiaryContainer"
+				android:text="@string/colors.item_tertiary_container.description"
+				android:textColor="?colorOnTertiaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnTertiaryContainer"
+				android:text="@string/colors.item_on_tertiary_container.description"
+				android:textColor="?colorTertiaryContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorError"
+				android:text="@string/colors.item_error.description"
+				android:textColor="?colorOnError"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnError"
+				android:text="@string/colors.item_on_error.description"
+				android:textColor="?colorError"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorErrorContainer"
+				android:text="@string/colors.item_error_container.description"
+				android:textColor="?colorOnErrorContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnErrorContainer"
+				android:text="@string/colors.item_on_error_container.description"
+				android:textColor="?colorErrorContainer"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorSurface"
+				android:text="@string/colors.item_surface.description"
+				android:textColor="?colorOnSurface"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnSurface"
+				android:text="@string/colors.item_on_surface.description"
+				android:textColor="?colorSurface"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorSurfaceVariant"
+				android:text="@string/colors.item_surface_variant.description"
+				android:textColor="?colorOnSurface"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnSurfaceVariant"
+				android:text="@string/colors.item_on_surface_variant.description"
+				android:textColor="?colorSurface"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorSurfaceInverse"
+				android:text="@string/colors.item_surface_inverse.description"
+				android:textColor="?colorOnSurfaceInverse"
+				app:layout_flexBasisPercent="50%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnSurfaceInverse"
+				android:text="@string/colors.item_on_surface_inverse.description"
+				android:textColor="?colorSurfaceInverse"
+				app:layout_flexBasisPercent="50%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOutline"
+				android:text="@string/colors.item_outline.description"
+				android:textColor="?colorSurface"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?android:colorBackground"
+				android:text="@string/colors.item_background.description"
+				android:textColor="?colorOnBackground"
+				app:layout_flexBasisPercent="25%" />
+
+			<TextView
+				style="@style/ColorChipItem"
+				android:background="?colorOnBackground"
+				android:text="@string/colors.item_on_background.description"
+				android:textColor="?android:colorBackground"
+				app:layout_flexBasisPercent="25%" />
+		</com.google.android.flexbox.FlexboxLayout>
+	</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

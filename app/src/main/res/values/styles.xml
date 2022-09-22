@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="ColorChipItem">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minHeight">128dp</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:textAppearance">?textAppearanceLabelLarge</item>
+		<item name="layout_flexGrow">1</item>
+	</style>
+
+	<style name="WidgetsSectionItem">
+		<item name="android:layout_marginTop">8dp</item>
+		<item name="android:textAppearance">?textAppearanceTitleSmall</item>
+		<item name="android:textColor">?android:textColorSecondary</item>
+	</style>
+
+	<style name="WidgetsCardItemText">
+		<item name="android:minHeight">128dp</item>
+		<item name="android:padding">16dp</item>
+	</style>
+
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+
+	<style name="AppTheme" parent="LightAppTheme" />
+
+	<style name="AppTheme.NavigationOverlay" parent="LightAppTheme.NavigationOverlay" />
+
+	<style name="BaseLightAppTheme" parent="Theme.Material3.Light.NoActionBar" />
+
+	<style name="LightAppTheme" parent="BaseLightAppTheme">
+		<item name="android:statusBarColor">?colorPrimary</item>
+		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
+		<item name="colorNavigationOverlay">@color/system_ui_overlay_dark</item>
+	</style>
+
+	<style name="LightAppTheme.NavigationOverlay">
+		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
+	</style>
+
+	<style name="BaseDarkAppTheme" parent="Theme.Material3.Dark.NoActionBar" />
+
+	<style name="DarkAppTheme" parent="BaseDarkAppTheme">
+		<item name="android:statusBarColor">@android:color/transparent</item>
+		<item name="android:navigationBarColor">@android:color/transparent</item>
+		<item name="colorNavigationOverlay">@color/system_ui_overlay_dark</item>
+	</style>
+
+	<style name="DarkAppTheme.NavigationOverlay">
+		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
+	</style>
+
+</resources>

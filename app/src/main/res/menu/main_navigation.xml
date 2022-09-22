@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/widgets"
+		android:icon="@drawable/ic_widgets_bottom_navigation"
+		android:title="@string/widgets.main.option" />
+	<item
+		android:id="@+id/typography"
+		android:icon="@drawable/ic_type_specimen_bottom_navigation"
+		android:title="@string/typography.main.option" />
+	<item
+		android:id="@+id/colors"
+		android:icon="@drawable/ic_color_lens_bottom_navigation"
+		android:title="@string/colors.main.option" />
+</menu>

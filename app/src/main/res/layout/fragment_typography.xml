@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<com.google.android.material.appbar.MaterialToolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?actionBarSize"
+			android:elevation="0dp"
+			app:title="@string/typography.main.title" />
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+			android:id="@+id/contentLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:divider="@drawable/space_8dp"
+			android:orientation="vertical"
+			android:padding="16dp"
+			android:showDividers="middle">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_display_large.description"
+				android:textAppearance="?textAppearanceDisplayLarge" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_display_medium.description"
+				android:textAppearance="?textAppearanceDisplayMedium" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_display_small.description"
+				android:textAppearance="?textAppearanceDisplaySmall" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_headline_large.description"
+				android:textAppearance="?textAppearanceHeadlineLarge" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_headline_medium.description"
+				android:textAppearance="?textAppearanceHeadlineMedium" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_headline_small.description"
+				android:textAppearance="?textAppearanceHeadlineSmall" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item.title_large.description"
+				android:textAppearance="?textAppearanceTitleLarge" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item.title_medium.description"
+				android:textAppearance="?textAppearanceTitleMedium" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item.title_small.description"
+				android:textAppearance="?textAppearanceTitleSmall" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_label_large.description"
+				android:textAppearance="?textAppearanceLabelLarge" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_label_medium.description"
+				android:textAppearance="?textAppearanceLabelMedium" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_label_small.description"
+				android:textAppearance="?textAppearanceLabelSmall" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_body_large.description"
+				android:textAppearance="?textAppearanceBodyLarge" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_body_medium.description"
+				android:textAppearance="?textAppearanceBodyMedium" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typography.item_body_small.description"
+				android:textAppearance="?textAppearanceBodySmall" />
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
