@@ -40,7 +40,7 @@
 				style="@style/WidgetsSectionItem"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="@string/widgets.section_common_buttons.title"
+				android:text="@string/widgets.button.title"
 				app:layout_flexBasisPercent="100%" />
 
 			<Button
@@ -77,7 +77,7 @@
 				style="@style/WidgetsSectionItem"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="@string/widgets.section_fab.title"
+				android:text="@string/widgets.fab.title"
 				app:layout_flexBasisPercent="100%" />
 
 			<com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -111,39 +111,277 @@
 				style="@style/WidgetsSectionItem"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="@string/widgets.section_segmented_buttons.title"
+				android:text="@string/widgets.button_segmented.title"
 				app:layout_flexBasisPercent="100%" />
 
 			<com.google.android.material.button.MaterialButtonToggleGroup
-				android:id="@+id/toggleButton"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				app:singleSelection="true">
 
 				<Button
-					style="?attr/materialButtonOutlinedStyle"
+					style="?materialButtonOutlinedStyle"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="@string/widgets.segmented_button_1.option" />
+					android:checked="true"
+					android:text="@string/widgets.button_segmented_1.option" />
 
 				<Button
-					style="?attr/materialButtonOutlinedStyle"
+					style="?materialButtonOutlinedStyle"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="@string/widgets.segmented_button_2.option" />
+					android:text="@string/widgets.button_segmented_2.option" />
 
 				<Button
-					style="?attr/materialButtonOutlinedStyle"
+					style="?materialButtonOutlinedStyle"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="@string/widgets.segmented_button_3.option" />
+					android:text="@string/widgets.button_segmented_3.option" />
+			</com.google.android.material.button.MaterialButtonToggleGroup>
+
+			<com.google.android.material.button.MaterialButtonToggleGroup
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:singleSelection="true">
+
+				<Button
+					style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.button_segmented_1.option"
+					app:icon="@drawable/ic_widgets_filled_24dp" />
+
+				<Button
+					style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.button_segmented_2.option"
+					app:icon="@drawable/ic_widgets_filled_24dp" />
+			</com.google.android.material.button.MaterialButtonToggleGroup>
+
+			<com.google.android.material.button.MaterialButtonToggleGroup
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:singleSelection="true">
+
+				<Button
+					style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:icon="@drawable/ic_format_align_left_24dp" />
+
+				<Button
+					style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:icon="@drawable/ic_format_align_center_24dp" />
+
+				<Button
+					style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:icon="@drawable/ic_format_align_right_24dp" />
+
+				<Button
+					style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:icon="@drawable/ic_format_align_justify_24dp" />
 			</com.google.android.material.button.MaterialButtonToggleGroup>
 
 			<TextView
 				style="@style/WidgetsSectionItem"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="@string/widgets.section_cards.title"
+				android:text="@string/widgets.chip.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.chip.ChipGroup
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:chipSpacingVertical="0dp">
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Assist"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_assist.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Assist.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_assist.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Filter"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_filter.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Filter.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_filter.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Input"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_input.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Input.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_input.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Suggestion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_suggestion.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Suggestion.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_suggestion.description" />
+			</com.google.android.material.chip.ChipGroup>
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.progress.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.progressindicator.CircularProgressIndicator
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:indeterminate="true" />
+
+			<com.google.android.material.progressindicator.LinearProgressIndicator
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:indeterminate="true" />
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.slider.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.slider.Slider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:valueFrom="0.0"
+				android:valueTo="100.0" />
+
+			<com.google.android.material.slider.Slider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stepSize="10.0"
+				android:valueFrom="0.0"
+				android:valueTo="100.0" />
+
+			<com.google.android.material.slider.RangeSlider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:valueFrom="0.0"
+				android:valueTo="100.0"
+				app:values="@array/initial_slider_values" />
+
+			<com.google.android.material.slider.RangeSlider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stepSize="10.0"
+				android:valueFrom="0.0"
+				android:valueTo="100.0"
+				app:values="@array/initial_slider_values" />
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.checkbox.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.checkbox_option.description" />
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.radio.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<RadioGroup
+				android:id="@+id/radioGroup"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.radio_1.option" />
+
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.radio_2.option" />
+			</RadioGroup>
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.switch.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:text="@string/widgets.switch.option" />
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.tab.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.tabs.TabLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<com.google.android.material.tabs.TabItem
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.tab_1.option" />
+
+				<com.google.android.material.tabs.TabItem
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.tab_2.option" />
+
+				<com.google.android.material.tabs.TabItem
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/widgets.tab_3.option" />
+			</com.google.android.material.tabs.TabLayout>
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/widgets.card.title"
 				app:layout_flexBasisPercent="100%" />
 
 			<com.google.android.material.card.MaterialCardView
