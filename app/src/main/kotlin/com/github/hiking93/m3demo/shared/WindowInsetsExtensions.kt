@@ -1,4 +1,4 @@
-package com.github.hiking93.m3demo.shared.ui
+package com.github.hiking93.m3demo.shared
 
 import android.view.View
 import androidx.core.view.ViewCompat

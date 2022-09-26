@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import com.github.hiking93.m3demo.databinding.FragmentColorsBinding
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
-import com.github.hiking93.m3demo.shared.ui.doOnWindowInsetsChanged
+import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
 
 class ColorsFragment : ViewBindingFragment<FragmentColorsBinding>() {
 

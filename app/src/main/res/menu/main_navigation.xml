@@ -6,6 +6,10 @@
 		android:icon="@drawable/ic_widgets_bottom_navigation"
 		android:title="@string/widgets.main.option" />
 	<item
+		android:id="@+id/popups"
+		android:icon="@drawable/ic_open_in_browser_24dp"
+		android:title="@string/popups.main.option" />
+	<item
 		android:id="@+id/typography"
 		android:icon="@drawable/ic_type_specimen_bottom_navigation"
 		android:title="@string/typography.main.option" />

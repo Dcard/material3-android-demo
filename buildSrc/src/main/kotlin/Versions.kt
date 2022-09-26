@@ -15,6 +15,7 @@ object Versions {
     object AndroidX {
         const val APP_COMPAT = "1.5.1"
         const val CORE = "1.9.0"
+        const val FRAGMENT = "1.5.0"
     }
 
     object Google {

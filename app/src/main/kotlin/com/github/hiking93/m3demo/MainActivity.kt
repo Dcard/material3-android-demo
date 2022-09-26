@@ -8,9 +8,10 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import com.github.hiking93.m3demo.colors.ColorsFragment
 import com.github.hiking93.m3demo.databinding.ActivityMainBinding
+import com.github.hiking93.m3demo.popups.PopupsFragment
 import com.github.hiking93.m3demo.shared.ViewBindingActivity
-import com.github.hiking93.m3demo.shared.ui.applyEdgeToEdge
-import com.github.hiking93.m3demo.shared.ui.doOnWindowInsetsChanged
+import com.github.hiking93.m3demo.shared.applyEdgeToEdge
+import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
 import com.github.hiking93.m3demo.typography.TypographyFragment
 import com.github.hiking93.m3demo.widgets.WidgetsFragment
 
@@ -110,6 +111,7 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
         selectedItemId = itemId
         val fragment = when (itemId) {
             R.id.widgets -> WidgetsFragment.newInstance()
+            R.id.popups -> PopupsFragment.newInstance()
             R.id.typography -> TypographyFragment.newInstance()
             R.id.colors -> ColorsFragment.newInstance()
             else -> null

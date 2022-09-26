@@ -9,8 +9,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import com.github.hiking93.m3demo.databinding.FragmentTypographyBinding
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
-import com.github.hiking93.m3demo.shared.ui.doOnWindowInsetsChanged
-import com.github.hiking93.m3demo.shared.ui.dpToPxSize
+import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
+import com.github.hiking93.m3demo.shared.dpToPxSize
 
 class TypographyFragment : ViewBindingFragment<FragmentTypographyBinding>() {
 

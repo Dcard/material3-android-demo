@@ -43,6 +43,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:${Versions.Kotlin.KOTLIN}")
     implementation("androidx.appcompat:appcompat:${Versions.AndroidX.APP_COMPAT}")
     implementation("androidx.core:core-ktx:${Versions.AndroidX.CORE}")
+    implementation("androidx.fragment:fragment-ktx:${Versions.AndroidX.FRAGMENT}")
     implementation("com.google.android.flexbox:flexbox:${Versions.Google.FLEXBOX}")
     implementation("com.google.android.material:material:${Versions.Google.MATERIAL}")
 }
