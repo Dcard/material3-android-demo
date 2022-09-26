@@ -80,8 +80,10 @@
 	<string name="widgets.card_outlined.description">Outlined card</string>
 	<string name="widgets.checkbox.title">Checkbox</string>
 	<string name="widgets.checkbox_option.description">Option</string>
+	<string name="widgets.checkbox_option_disabled.description">Disabled</string>
 	<string name="widgets.chip.title">Chips</string>
 	<string name="widgets.chip_assist.description">Assist</string>
+	<string name="widgets.chip_disabled.title">Chips (disabled)</string>
 	<string name="widgets.chip_filter.description">Filter</string>
 	<string name="widgets.chip_input.description">Input</string>
 	<string name="widgets.chip_suggestion.description">Suggestion</string>
@@ -96,9 +98,11 @@
 	<string name="widgets.radio.title">Radio buttons</string>
 	<string name="widgets.radio_1.option">Option 1</string>
 	<string name="widgets.radio_2.option">Option 2</string>
+	<string name="widgets.radio_disabled.option">Disabled</string>
 	<string name="widgets.slider.title">Sliders</string>
 	<string name="widgets.switch.option">Option</string>
 	<string name="widgets.switch.title">Switch</string>
+	<string name="widgets.switch_disabled.option">Disabled</string>
 	<string name="widgets.tab.title">Tabs</string>
 	<string name="widgets.tab_1.option">Tab 1</string>
 	<string name="widgets.tab_2.option">Tab 2</string>
@@ -106,9 +110,12 @@
 	<string name="widgets.text_field.title">Text fields</string>
 	<string name="widgets.text_field_error.description">Error text</string>
 	<string name="widgets.text_field_filled.hint">Filled text field</string>
+	<string name="widgets.text_field_filled_disabled.hint">Filled text field (disabled)</string>
 	<string name="widgets.text_field_filled_error.hint">Filled text field with error</string>
 	<string name="widgets.text_field_outlined.hint">Outlined text field</string>
 	<string name="widgets.text_field_outlined_dense.hint">Outlined dense text field</string>
+	<string name="widgets.text_field_outlined_dense_disabled.hint">Outlined dense text field (disabled)</string>
+	<string name="widgets.text_field_outlined_disabled.hint">Outlined text field (disabled)</string>
 	<string name="widgets.text_field_outlined_error.hint">Outlined text field with error</string>
 	<string name="widgets.text_field_supporting.description">Supporting text</string>
 </resources>

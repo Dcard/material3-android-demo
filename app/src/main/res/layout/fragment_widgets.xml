@@ -50,9 +50,23 @@
 				android:text="@string/widgets.button_elevated.description" />
 
 			<Button
+				style="@style/Widget.Material3.Button.ElevatedButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:text="@string/widgets.button_elevated.description" />
+
+			<Button
 				style="@style/Widget.Material3.Button"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:text="@string/widgets.button_filled.description" />
+
+			<Button
+				style="@style/Widget.Material3.Button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
 				android:text="@string/widgets.button_filled.description" />
 
 			<Button
@@ -62,15 +76,36 @@
 				android:text="@string/widgets.button_tonal.description" />
 
 			<Button
+				style="@style/Widget.Material3.Button.TonalButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:text="@string/widgets.button_tonal.description" />
+
+			<Button
 				style="@style/Widget.Material3.Button.OutlinedButton"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="@string/widgets.button_outlined.description" />
 
 			<Button
+				style="@style/Widget.Material3.Button.OutlinedButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:text="@string/widgets.button_outlined.description" />
+
+			<Button
 				style="@style/Widget.Material3.Button.TextButton"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:text="@string/widgets.button_text.description" />
+
+			<Button
+				style="@style/Widget.Material3.Button.TextButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
 				android:text="@string/widgets.button_text.description" />
 
 			<TextView
@@ -208,9 +243,23 @@
 					android:text="@string/widgets.chip_assist.description" />
 
 				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Assist"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:text="@string/widgets.chip_assist.description" />
+
+				<com.google.android.material.chip.Chip
 					style="@style/Widget.Material3.Chip.Assist.Elevated"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_assist.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Assist.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
 					android:text="@string/widgets.chip_assist.description" />
 
 				<com.google.android.material.chip.Chip
@@ -220,9 +269,23 @@
 					android:text="@string/widgets.chip_filter.description" />
 
 				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Filter"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:text="@string/widgets.chip_filter.description" />
+
+				<com.google.android.material.chip.Chip
 					style="@style/Widget.Material3.Chip.Filter.Elevated"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_filter.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Filter.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
 					android:text="@string/widgets.chip_filter.description" />
 
 				<com.google.android.material.chip.Chip
@@ -232,9 +295,23 @@
 					android:text="@string/widgets.chip_input.description" />
 
 				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Input"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:text="@string/widgets.chip_input.description" />
+
+				<com.google.android.material.chip.Chip
 					style="@style/Widget.Material3.Chip.Input.Elevated"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_input.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Input.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
 					android:text="@string/widgets.chip_input.description" />
 
 				<com.google.android.material.chip.Chip
@@ -244,9 +321,23 @@
 					android:text="@string/widgets.chip_suggestion.description" />
 
 				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Suggestion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:text="@string/widgets.chip_suggestion.description" />
+
+				<com.google.android.material.chip.Chip
 					style="@style/Widget.Material3.Chip.Suggestion.Elevated"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:text="@string/widgets.chip_suggestion.description" />
+
+				<com.google.android.material.chip.Chip
+					style="@style/Widget.Material3.Chip.Suggestion.Elevated"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
 					android:text="@string/widgets.chip_suggestion.description" />
 			</com.google.android.material.chip.ChipGroup>
 
@@ -284,6 +375,21 @@
 			<com.google.android.material.slider.Slider
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:valueFrom="0.0"
+				android:valueTo="100.0" />
+
+			<com.google.android.material.slider.Slider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stepSize="10.0"
+				android:valueFrom="0.0"
+				android:valueTo="100.0" />
+
+			<com.google.android.material.slider.Slider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:enabled="false"
 				android:stepSize="10.0"
 				android:valueFrom="0.0"
 				android:valueTo="100.0" />
@@ -298,6 +404,23 @@
 			<com.google.android.material.slider.RangeSlider
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:valueFrom="0.0"
+				android:valueTo="100.0"
+				app:values="@array/initial_slider_values" />
+
+			<com.google.android.material.slider.RangeSlider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stepSize="10.0"
+				android:valueFrom="0.0"
+				android:valueTo="100.0"
+				app:values="@array/initial_slider_values" />
+
+			<com.google.android.material.slider.RangeSlider
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:enabled="false"
 				android:stepSize="10.0"
 				android:valueFrom="0.0"
 				android:valueTo="100.0"
@@ -314,6 +437,12 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="@string/widgets.checkbox_option.description" />
+
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:text="@string/widgets.checkbox_option_disabled.description" />
 
 			<TextView
 				style="@style/WidgetsSectionItem"
@@ -336,6 +465,12 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:text="@string/widgets.radio_2.option" />
+
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:enabled="false"
+					android:text="@string/widgets.radio_disabled.option" />
 			</RadioGroup>
 
 			<TextView
@@ -349,6 +484,12 @@
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:text="@string/widgets.switch.option" />
+
+			<com.google.android.material.materialswitch.MaterialSwitch
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:enabled="false"
+				android:text="@string/widgets.switch_disabled.option" />
 
 			<TextView
 				style="@style/WidgetsSectionItem"
@@ -410,6 +551,19 @@
 			</com.google.android.material.textfield.TextInputLayout>
 
 			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputFilledStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:hint="@string/widgets.text_field_filled_disabled.hint"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
 				style="?textInputOutlinedStyle"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -435,10 +589,51 @@
 			</com.google.android.material.textfield.TextInputLayout>
 
 			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputOutlinedStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:hint="@string/widgets.text_field_outlined_disabled.hint"
+				app:errorEnabled="true"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/outlinedErrorDenseTextInputLayout"
 				style="?textInputOutlinedDenseStyle"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="@string/widgets.text_field_outlined_dense.hint"
+				app:errorEnabled="true"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputOutlinedDenseStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_outlined_dense.hint"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputOutlinedDenseStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:enabled="false"
+				android:hint="@string/widgets.text_field_outlined_dense_disabled.hint"
 				app:helperText="@string/widgets.text_field_supporting.description">
 
 				<com.google.android.material.textfield.TextInputEditText

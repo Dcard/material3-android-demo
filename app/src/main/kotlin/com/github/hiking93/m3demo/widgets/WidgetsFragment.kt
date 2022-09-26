@@ -66,6 +66,7 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
         sequenceOf(
             binding.filledErrorTextInputLayout,
             binding.outlinedErrorTextInputLayout,
+            binding.outlinedErrorDenseTextInputLayout,
         ).forEach {
             it.error = getText(R.string.widgets_text_field_error_description)
         }
