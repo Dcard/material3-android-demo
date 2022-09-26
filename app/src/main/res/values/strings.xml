@@ -103,4 +103,12 @@
 	<string name="widgets.tab_1.option">Tab 1</string>
 	<string name="widgets.tab_2.option">Tab 2</string>
 	<string name="widgets.tab_3.option">Tab 3</string>
+	<string name="widgets.text_field.title">Text fields</string>
+	<string name="widgets.text_field_error.description">Error text</string>
+	<string name="widgets.text_field_filled.hint">Filled text field</string>
+	<string name="widgets.text_field_filled_error.hint">Filled text field with error</string>
+	<string name="widgets.text_field_outlined.hint">Outlined text field</string>
+	<string name="widgets.text_field_outlined_dense.hint">Outlined dense text field</string>
+	<string name="widgets.text_field_outlined_error.hint">Outlined text field with error</string>
+	<string name="widgets.text_field_supporting.description">Supporting text</string>
 </resources>

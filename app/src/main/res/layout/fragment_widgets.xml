@@ -381,6 +381,75 @@
 				style="@style/WidgetsSectionItem"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:text="@string/widgets.text_field.title"
+				app:layout_flexBasisPercent="100%" />
+
+			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputFilledStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_filled.hint"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/filledErrorTextInputLayout"
+				style="?textInputFilledStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_filled_error.hint"
+				app:errorEnabled="true">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputOutlinedStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_outlined.hint"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/outlinedErrorTextInputLayout"
+				style="?textInputOutlinedStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_outlined_error.hint"
+				app:errorEnabled="true">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<com.google.android.material.textfield.TextInputLayout
+				style="?textInputOutlinedDenseStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/widgets.text_field_outlined_dense.hint"
+				app:helperText="@string/widgets.text_field_supporting.description">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<TextView
+				style="@style/WidgetsSectionItem"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
 				android:text="@string/widgets.card.title"
 				app:layout_flexBasisPercent="100%" />
 

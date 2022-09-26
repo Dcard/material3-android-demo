@@ -4,5 +4,5 @@ Demo of Material 3 (Material You) components.
 
 ## Screenshots
 
-![light](https://user-images.githubusercontent.com/3449834/191725338-d3b7ec2c-33b0-4da0-9e6d-b7d63fae3f47.png)
-![dark](https://user-images.githubusercontent.com/3449834/191725355-a42a9fca-d7f0-4e87-b0f1-24032db44883.png)
+![light](https://user-images.githubusercontent.com/3449834/192256909-8a73e015-c0e9-4f33-8ecd-faa65c740a59.png)
+![dark](https://user-images.githubusercontent.com/3449834/192256893-d832dee7-824d-47e9-93ff-eb66c2bc421d.png)

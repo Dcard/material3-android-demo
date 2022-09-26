@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.graphics.Insets
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import com.github.hiking93.m3demo.colors.ColorsFragment
 import com.github.hiking93.m3demo.databinding.ActivityMainBinding
@@ -51,7 +52,9 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
 
     private fun setupWindow() {
         applyEdgeToEdge()
-        binding.root.doOnWindowInsetsChanged { _, insets ->
+        binding.root.doOnWindowInsetsChanged(
+            listenToAnimation = true,
+        ) { _, insets ->
             val systemWindowInsets = insets.getInsets(
                 WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime(),
             )
@@ -59,6 +62,9 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
                 left = systemWindowInsets.left,
                 right = systemWindowInsets.right,
             )
+            binding.bottomInsetSpace?.updateLayoutParams {
+                height = systemWindowInsets.bottom
+            }
             val systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             val imeInsets = insets.getInsets(WindowInsetsCompat.Type.ime())
             WindowInsetsCompat.Builder(insets)

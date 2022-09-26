@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.graphics.Insets
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
+import com.github.hiking93.m3demo.R
 import com.github.hiking93.m3demo.databinding.FragmentWidgetsBinding
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
 import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
@@ -26,10 +27,13 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setupWindow()
+        setupViews()
     }
 
     private fun setupWindow() {
-        binding.root.doOnWindowInsetsChanged { v, insets ->
+        binding.root.doOnWindowInsetsChanged(
+            listenToAnimation = true,
+        ) { v, insets ->
             val systemWindowInsets = insets.getInsets(
                 WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime(),
             )
@@ -55,6 +59,15 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
                     Insets.of(0, 0, 0, imeInsets.bottom)
                 )
                 .build()
+        }
+    }
+
+    private fun setupViews() {
+        sequenceOf(
+            binding.filledErrorTextInputLayout,
+            binding.outlinedErrorTextInputLayout,
+        ).forEach {
+            it.error = getText(R.string.widgets_text_field_error_description)
         }
     }
 }
