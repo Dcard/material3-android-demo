@@ -3,7 +3,7 @@ package com.github.hiking93.m3demo.popups
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class PopupsListAdapter(
+class PopupsAdapter(
     private val interaction: Interaction,
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -12,22 +12,22 @@ class PopupsListAdapter(
     }
 
     interface Interaction {
-        fun onPopupOptionClick(option: PopupsListAdapterItem.PopupOption)
+        fun onPopupOptionClick(option: PopupsAdapterItem.PopupOption)
     }
 
-    private val items: List<PopupsListAdapterItem> = PopupsListAdapterItemFactory.createItems()
+    private val items: List<PopupsAdapterItem> = PopupsAdapterItemFactory.createItems()
 
     override fun getItemCount() = items.size
 
     override fun getItemViewType(position: Int) = when (items[position]) {
-        is PopupsListAdapterItem.PopupOption -> TYPE_POPUP_OPTION
+        is PopupsAdapterItem.PopupOption -> TYPE_POPUP_OPTION
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = when (viewType) {
         TYPE_POPUP_OPTION -> PopupOptionViewHolder.create(parent).apply {
             itemView.setOnClickListener {
                 adapterPosition.takeIf { it != RecyclerView.NO_POSITION }?.let { position ->
-                    val item = items[position] as PopupsListAdapterItem.PopupOption
+                    val item = items[position] as PopupsAdapterItem.PopupOption
                     interaction.onPopupOptionClick(item)
                 }
             }
@@ -37,7 +37,7 @@ class PopupsListAdapter(
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (val item = items[position]) {
-            is PopupsListAdapterItem.PopupOption -> {
+            is PopupsAdapterItem.PopupOption -> {
                 holder as PopupOptionViewHolder
                 holder.bind(
                     text = holder.itemView.context.getText(item.textResId),

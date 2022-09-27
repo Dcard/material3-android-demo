@@ -7,17 +7,19 @@ import android.view.ViewGroup
 import androidx.core.graphics.Insets
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
-import com.github.hiking93.m3demo.R
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.hiking93.m3demo.databinding.FragmentWidgetsBinding
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
 import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
-import com.github.hiking93.m3demo.shared.dpToPxSize
+import com.google.android.material.divider.MaterialDividerItemDecoration
 
 class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
 
     companion object {
         fun newInstance() = WidgetsFragment()
     }
+
+    private val adapter = WidgetsAdapter()
 
     override fun onCreateViewBinding(
         inflater: LayoutInflater,
@@ -33,7 +35,7 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
     private fun setupWindow() {
         binding.root.doOnWindowInsetsChanged(
             listenToAnimation = true,
-        ) { v, insets ->
+        ) { _, insets ->
             val systemWindowInsets = insets.getInsets(
                 WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime(),
             )
@@ -44,8 +46,8 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
             binding.appBarLayout.updatePadding(
                 top = systemWindowInsets.top,
             )
-            binding.contentLayout.updatePadding(
-                bottom = systemWindowInsets.bottom + 16f.dpToPxSize(v.context)
+            binding.recyclerView.updatePadding(
+                bottom = systemWindowInsets.bottom,
             )
             val systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             val imeInsets = insets.getInsets(WindowInsetsCompat.Type.ime())
@@ -63,12 +65,9 @@ class WidgetsFragment : ViewBindingFragment<FragmentWidgetsBinding>() {
     }
 
     private fun setupViews() {
-        sequenceOf(
-            binding.filledErrorTextInputLayout,
-            binding.outlinedErrorTextInputLayout,
-            binding.outlinedErrorDenseTextInputLayout,
-        ).forEach {
-            it.error = getText(R.string.widgets_text_field_error_description)
+        binding.recyclerView.apply {
+            adapter = this@WidgetsFragment.adapter
+            layoutManager = LinearLayoutManager(context)
         }
     }
 }

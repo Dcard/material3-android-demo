@@ -1,12 +1,12 @@
 package com.github.hiking93.m3demo.popups
 
 import com.github.hiking93.m3demo.R
-import com.github.hiking93.m3demo.popups.PopupsListAdapterItem.PopupOption
-import com.github.hiking93.m3demo.popups.PopupsListAdapterItem.PopupOption.Type
+import com.github.hiking93.m3demo.popups.PopupsAdapterItem.PopupOption
+import com.github.hiking93.m3demo.popups.PopupsAdapterItem.PopupOption.Type
 
-object PopupsListAdapterItemFactory {
+object PopupsAdapterItemFactory {
 
-    fun createItems(): List<PopupsListAdapterItem> = listOf(
+    fun createItems(): List<PopupsAdapterItem> = listOf(
         PopupOption(
             type = Type.BasicDialog,
             textResId = R.string.popups_item_dialog_basic_dialog_option,

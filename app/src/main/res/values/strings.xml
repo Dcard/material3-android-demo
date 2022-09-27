@@ -69,9 +69,9 @@
 	<string name="widgets.button_filled.description">Filled button</string>
 	<string name="widgets.button_outlined.description">Outlined button</string>
 	<string name="widgets.button_segmented.title">Segmented buttons</string>
-	<string name="widgets.button_segmented_1.option">Segment 1</string>
-	<string name="widgets.button_segmented_2.option">Segment 2</string>
-	<string name="widgets.button_segmented_3.option">Segment 3</string>
+	<string name="widgets.button_segmented_1.option">One</string>
+	<string name="widgets.button_segmented_2.option">Two</string>
+	<string name="widgets.button_segmented_3.option">Three</string>
 	<string name="widgets.button_text.description">Text button</string>
 	<string name="widgets.button_tonal.description">Tonal button</string>
 	<string name="widgets.card.title">Cards</string>

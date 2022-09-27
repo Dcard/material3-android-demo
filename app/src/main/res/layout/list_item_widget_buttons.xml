@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clipToPadding="false"
+	android:padding="16dp"
+	app:dividerDrawable="@drawable/space_8dp"
+	app:flexWrap="wrap"
+	app:showDivider="middle">
+
+	<TextView
+		style="@style/WidgetsSectionItem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:text="@string/widgets.button.title"
+		app:layout_flexBasisPercent="100%" />
+
+	<Button
+		style="@style/Widget.Material3.Button.ElevatedButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/widgets.button_elevated.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.ElevatedButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/widgets.button_elevated.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/widgets.button_filled.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/widgets.button_filled.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.TonalButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/widgets.button_tonal.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.TonalButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/widgets.button_tonal.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.OutlinedButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/widgets.button_outlined.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.OutlinedButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/widgets.button_outlined.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.TextButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/widgets.button_text.description" />
+
+	<Button
+		style="@style/Widget.Material3.Button.TextButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:enabled="false"
+		android:text="@string/widgets.button_text.description" />
+</com.google.android.flexbox.FlexboxLayout>

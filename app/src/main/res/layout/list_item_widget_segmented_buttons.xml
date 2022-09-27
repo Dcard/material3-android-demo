@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp"
+	app:dividerDrawable="@drawable/space_8dp"
+	app:flexWrap="wrap"
+	app:showDivider="middle">
+
+	<TextView
+		style="@style/WidgetsSectionItem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:text="@string/widgets.button_segmented.title"
+		app:layout_flexBasisPercent="100%" />
+
+	<com.google.android.material.button.MaterialButtonToggleGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:singleSelection="true">
+
+		<Button
+			style="?materialButtonOutlinedStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:text="@string/widgets.button_segmented_1.option" />
+
+		<Button
+			style="?materialButtonOutlinedStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/widgets.button_segmented_2.option" />
+
+		<Button
+			style="?materialButtonOutlinedStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/widgets.button_segmented_3.option" />
+	</com.google.android.material.button.MaterialButtonToggleGroup>
+
+	<com.google.android.material.button.MaterialButtonToggleGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:singleSelection="true">
+
+		<Button
+			style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/widgets.button_segmented_1.option"
+			app:icon="@drawable/ic_widgets_filled_24dp" />
+
+		<Button
+			style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/widgets.button_segmented_2.option"
+			app:icon="@drawable/ic_widgets_filled_24dp" />
+	</com.google.android.material.button.MaterialButtonToggleGroup>
+
+	<com.google.android.material.button.MaterialButtonToggleGroup
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:singleSelection="true">
+
+		<Button
+			style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:icon="@drawable/ic_format_align_left_24dp" />
+
+		<Button
+			style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:icon="@drawable/ic_format_align_center_24dp" />
+
+		<Button
+			style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:icon="@drawable/ic_format_align_right_24dp" />
+
+		<Button
+			style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:icon="@drawable/ic_format_align_justify_24dp" />
+	</com.google.android.material.button.MaterialButtonToggleGroup>
+</com.google.android.flexbox.FlexboxLayout>

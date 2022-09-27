@@ -28,11 +28,11 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
         fun newInstance() = PopupsFragment()
     }
 
-    private val adapter by lazy { PopupsListAdapter(adapterInteraction) }
+    private val adapter by lazy { PopupsAdapter(adapterInteraction) }
 
     private val adapterInteraction by lazy {
-        object : PopupsListAdapter.Interaction {
-            override fun onPopupOptionClick(option: PopupsListAdapterItem.PopupOption) {
+        object : PopupsAdapter.Interaction {
+            override fun onPopupOptionClick(option: PopupsAdapterItem.PopupOption) {
                 showPopup(option)
             }
         }
@@ -117,17 +117,17 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
     }
 
     private fun showPopup(
-        option: PopupsListAdapterItem.PopupOption,
+        option: PopupsAdapterItem.PopupOption,
     ) {
         when (option.type) {
-            PopupsListAdapterItem.PopupOption.Type.BasicDialog -> {
+            PopupsAdapterItem.PopupOption.Type.BasicDialog -> {
                 AlertDialogFragment.Builder(requireContext())
                     .setTitle(R.string.popups_dialog_basic_title)
                     .setMessage(R.string.popups_dialog_basic_message)
                     .setPositiveButton(R.string.popups_dialog_ok_action)
                     .show(childFragmentManager, FRAGMENT_TAG_DIALOG_BASIC)
             }
-            PopupsListAdapterItem.PopupOption.Type.BasicDialogWithButtons -> {
+            PopupsAdapterItem.PopupOption.Type.BasicDialogWithButtons -> {
                 AlertDialogFragment.Builder(requireContext())
                     .setTitle(R.string.popups_dialog_basic_title)
                     .setMessage(R.string.popups_dialog_basic_message)
@@ -136,7 +136,7 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
                     .setNeutralButton(R.string.popups_dialog_neutral_action)
                     .show(childFragmentManager, FRAGMENT_TAG_DIALOG_BASIC_WITH_BUTTONS)
             }
-            PopupsListAdapterItem.PopupOption.Type.Snackbar -> {
+            PopupsAdapterItem.PopupOption.Type.Snackbar -> {
                 Snackbar
                     .make(
                         binding.root,
@@ -145,7 +145,7 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
                     )
                     .show()
             }
-            PopupsListAdapterItem.PopupOption.Type.SnackbarWithAction -> {
+            PopupsAdapterItem.PopupOption.Type.SnackbarWithAction -> {
                 Snackbar
                     .make(
                         binding.root,
