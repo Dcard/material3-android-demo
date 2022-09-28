@@ -14,6 +14,9 @@ sealed class PopupsAdapterItem {
             BasicDialogWithButtons,
             Snackbar,
             SnackbarWithAction,
+            DatePicker,
+            DateRangePicker,
+            TimePicker,
         }
     }
 }

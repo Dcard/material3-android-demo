@@ -14,7 +14,9 @@ import com.github.hiking93.m3demo.shared.AlertDialogFragment
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
 import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
 import com.github.hiking93.m3demo.shared.dpToPxSize
+import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.timepicker.MaterialTimePicker
 
 class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
     AlertDialogFragment.Interaction {
@@ -110,6 +112,33 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
     }
 
     private fun setupViews() {
+        binding.toolbar.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                R.id.app_bar_action -> {
+                    Snackbar
+                        .make(
+                            binding.root,
+                            R.string.popups_menu_action_clicked_message,
+                            Snackbar.LENGTH_SHORT,
+                        )
+                        .show()
+                    true
+                }
+                R.id.app_bar_overflow_1,
+                R.id.app_bar_overflow_2,
+                R.id.app_bar_overflow_3 -> {
+                    Snackbar
+                        .make(
+                            binding.root,
+                            R.string.popups_menu_overflow_action_clicked_message,
+                            Snackbar.LENGTH_SHORT,
+                        )
+                        .show()
+                    true
+                }
+                else -> false
+            }
+        }
         binding.recyclerView.apply {
             adapter = this@PopupsFragment.adapter
             layoutManager = LinearLayoutManager(context)
@@ -162,6 +191,20 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
                             .show()
                     }
                     .show()
+            }
+            PopupsAdapterItem.PopupOption.Type.DatePicker -> {
+                MaterialDatePicker.Builder.datePicker().build()
+                    .show(childFragmentManager, null)
+            }
+            PopupsAdapterItem.PopupOption.Type.DateRangePicker -> {
+                MaterialDatePicker.Builder.dateRangePicker().build()
+                    .show(childFragmentManager, null)
+            }
+            PopupsAdapterItem.PopupOption.Type.TimePicker -> {
+                MaterialTimePicker.Builder()
+                    .setTitleText(R.string.popups_time_picker_title)
+                    .build()
+                    .show(childFragmentManager, null)
             }
         }
     }

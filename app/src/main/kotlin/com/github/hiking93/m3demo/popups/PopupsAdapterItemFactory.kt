@@ -23,5 +23,17 @@ object PopupsAdapterItemFactory {
             type = Type.SnackbarWithAction,
             textResId = R.string.popups_item_snackbar_with_action_option,
         ),
+        PopupOption(
+            type = Type.DatePicker,
+            textResId = R.string.popups_item_date_picker_option,
+        ),
+        PopupOption(
+            type = Type.DateRangePicker,
+            textResId = R.string.popups_item_date_range_picker_option,
+        ),
+        PopupOption(
+            type = Type.TimePicker,
+            textResId = R.string.popups_item_time_picker_option,
+        ),
     )
 }

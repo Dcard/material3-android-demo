@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/app_bar_action"
+		android:icon="@drawable/ic_open_in_browser_24dp"
+		android:title="@string/popups.menu.action"
+		app:iconTint="?colorOnSurface"
+		app:showAsAction="always" />
+	<item
+		android:id="@+id/app_bar_overflow_1"
+		android:title="@string/popups.menu_overflow_1.action" />
+	<item
+		android:id="@+id/app_bar_overflow_2"
+		android:title="@string/popups.menu_overflow_2.action" />
+	<item
+		android:id="@+id/app_bar_overflow_3"
+		android:title="@string/popups.menu_overflow_3.action" />
+</menu>
