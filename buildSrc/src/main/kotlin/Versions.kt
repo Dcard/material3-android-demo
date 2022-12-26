@@ -9,21 +9,21 @@ object Versions {
     }
 
     object Android {
-        const val GRADLE_PLUGIN = "7.3.0"
+        const val GRADLE_PLUGIN = "7.3.1"
     }
 
     object AndroidX {
         const val APP_COMPAT = "1.5.1"
         const val CORE = "1.9.0"
-        const val FRAGMENT = "1.5.0"
+        const val FRAGMENT = "1.5.5"
     }
 
     object Google {
         const val FLEXBOX = "3.0.0"
-        const val MATERIAL = "1.8.0-alpha01"
+        const val MATERIAL = "1.8.0-beta01"
     }
 
     object Kotlin {
-        const val KOTLIN = "1.7.10"
+        const val KOTLIN = "1.7.22"
     }
 }
