@@ -12,6 +12,7 @@ sealed class PopupsAdapterItem {
         enum class Type {
             BasicDialog,
             BasicDialogWithButtons,
+            BottomSheetDialog,
             Snackbar,
             SnackbarWithAction,
             DatePicker,

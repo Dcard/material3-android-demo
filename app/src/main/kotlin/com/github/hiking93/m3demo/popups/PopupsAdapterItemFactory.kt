@@ -16,6 +16,10 @@ object PopupsAdapterItemFactory {
             textResId = R.string.popups_item_dialog_basic_dialog_with_buttons_option,
         ),
         PopupOption(
+            type = Type.BottomSheetDialog,
+            textResId = R.string.popups_item_dialog_bottom_sheet_option,
+        ),
+        PopupOption(
             type = Type.Snackbar,
             textResId = R.string.popups_item_snackbar_option,
         ),

@@ -18,28 +18,28 @@
 		android:text="@string/widgets.button.title"
 		app:layout_flexBasisPercent="100%" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.ElevatedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_elevated.description"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.ElevatedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		android:text="@string/widgets.button_elevated.description" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.ElevatedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_elevated.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.ElevatedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -47,28 +47,28 @@
 		android:text="@string/widgets.button_elevated.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_filled.description"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		android:text="@string/widgets.button_filled.description" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_filled.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -76,28 +76,28 @@
 		android:text="@string/widgets.button_filled.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TonalButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_tonal.description"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TonalButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		android:text="@string/widgets.button_tonal.description" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TonalButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_tonal.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TonalButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -105,28 +105,28 @@
 		android:text="@string/widgets.button_tonal.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.OutlinedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_outlined.description"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.OutlinedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		android:text="@string/widgets.button_outlined.description" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.OutlinedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_outlined.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.OutlinedButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -134,28 +134,28 @@
 		android:text="@string/widgets.button_outlined.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TextButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_text.description"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TextButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		android:text="@string/widgets.button_text.description" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TextButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/widgets.button_text.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="@style/Widget.Material3.Button.TextButton"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
@@ -163,40 +163,40 @@
 		android:text="@string/widgets.button_text.description"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonFilledStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		app:icon="@drawable/ic_widgets_filled_24dp"
 		app:layout_wrapBefore="true" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonFilledStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonOutlinedStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonOutlinedStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:enabled="false"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		app:icon="@drawable/ic_widgets_filled_24dp" />
 
-	<Button
+	<com.google.android.material.button.MaterialButton
 		style="?attr/materialIconButtonStyle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

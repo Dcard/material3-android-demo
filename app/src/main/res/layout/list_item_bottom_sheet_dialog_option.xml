@@ -11,6 +11,6 @@
 	android:paddingHorizontal="16dp"
 	android:paddingVertical="12dp"
 	android:textAppearance="?textAppearanceListItem"
-	app:drawableStartCompat="@drawable/ic_open_in_browser_24dp"
+	app:drawableStartCompat="@drawable/ic_widgets_filled_24dp"
 	app:drawableTint="?android:textColorPrimary"
 	tools:text="@tools:sample/lorem" />

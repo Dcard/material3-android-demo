@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.core.graphics.Insets
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.hiking93.m3demo.R
 import com.github.hiking93.m3demo.databinding.FragmentPopupsBinding
+import com.github.hiking93.m3demo.popups.bottomsheet.DemoBottomSheetDialogAdapterItem
+import com.github.hiking93.m3demo.popups.bottomsheet.DemoBottomSheetDialogFragment
 import com.github.hiking93.m3demo.shared.AlertDialogFragment
 import com.github.hiking93.m3demo.shared.ViewBindingFragment
 import com.github.hiking93.m3demo.shared.doOnWindowInsetsChanged
@@ -19,7 +20,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.timepicker.MaterialTimePicker
 
 class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
-    AlertDialogFragment.Interaction {
+    AlertDialogFragment.Interaction,
+    DemoBottomSheetDialogFragment.Interaction {
 
     companion object {
 
@@ -81,6 +83,17 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
         }
     }
 
+    override fun onOptionClick(option: DemoBottomSheetDialogAdapterItem.Option) {
+        Snackbar.make(
+            binding.root,
+            getString(
+                R.string.popups_dialog_bottom_sheet_option_selected_message_format,
+                option.serialNumber,
+            ),
+            Snackbar.LENGTH_SHORT,
+        ).show()
+    }
+
     private fun setupWindow() {
         binding.root.doOnWindowInsetsChanged { v, insets ->
             val systemWindowInsets = insets.getInsets(
@@ -139,10 +152,7 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
                 else -> false
             }
         }
-        binding.recyclerView.apply {
-            adapter = this@PopupsFragment.adapter
-            layoutManager = LinearLayoutManager(context)
-        }
+        binding.recyclerView.adapter = adapter
     }
 
     private fun showPopup(
@@ -164,6 +174,9 @@ class PopupsFragment : ViewBindingFragment<FragmentPopupsBinding>(),
                     .setNegativeButton(R.string.popups_dialog_negative_action)
                     .setNeutralButton(R.string.popups_dialog_neutral_action)
                     .show(childFragmentManager, FRAGMENT_TAG_DIALOG_BASIC_WITH_BUTTONS)
+            }
+            PopupsAdapterItem.PopupOption.Type.BottomSheetDialog -> {
+                DemoBottomSheetDialogFragment().show(childFragmentManager, null)
             }
             PopupsAdapterItem.PopupOption.Type.Snackbar -> {
                 Snackbar

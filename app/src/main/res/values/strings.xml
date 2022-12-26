@@ -32,6 +32,8 @@
 	<string name="popups.dialog_action_negative.arg">Negative</string>
 	<string name="popups.dialog_action_neutral.arg">Neutral</string>
 	<string name="popups.dialog_action_positive.arg">Positive</string>
+	<string name="popups.dialog_bottom_sheet.option_format">Option %1$s</string>
+	<string name="popups.dialog_bottom_sheet_option_selected.message_format">Bottom sheet option %1$s selected.</string>
 	<string name="popups.dialog_basic.message">A dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision.</string>
 	<string name="popups.dialog_basic.title">Basic dialog title</string>
 	<string name="popups.dialog_negative.action">Negative</string>
@@ -44,6 +46,7 @@
 	<string name="popups.item_date_range_picker.option">Date range picker</string>
 	<string name="popups.item_dialog_basic_dialog.option">Basic dialog</string>
 	<string name="popups.item_dialog_basic_dialog_with_buttons.option">Basic dialog with buttons</string>
+	<string name="popups.item_dialog_bottom_sheet.option">Bottom sheet dialog</string>
 	<string name="popups.item_snackbar.option">Snackbar</string>
 	<string name="popups.item_snackbar_with_action.option">Snackbar with action</string>
 	<string name="popups.item_time_picker.option">Time picker</string>
