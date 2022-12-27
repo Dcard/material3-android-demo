@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -9,15 +9,32 @@
 	tools:context="com.github.hiking93.m3demo.MainActivity">
 
 	<com.google.android.material.navigationrail.NavigationRailView
-		android:id="@+id/navigation_rail"
+		android:id="@+id/navigationRailView"
 		android:layout_width="wrap_content"
-		android:layout_height="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
 		app:menu="@menu/main_navigation" />
 
 	<androidx.fragment.app.FragmentContainerView
 		android:id="@+id/fragmentContainerView"
 		android:layout_width="0dp"
-		android:layout_height="match_parent"
-		android:layout_weight="1" />
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/navigationRailView"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout="@layout/fragment_widgets" />
 
-</LinearLayout>
+	<View
+		android:id="@+id/navigationOverlayView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="?colorNavigationOverlay"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

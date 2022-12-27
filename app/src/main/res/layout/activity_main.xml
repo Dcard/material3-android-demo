@@ -6,7 +6,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	tools:context="com.github.hiking93.m3demo.MainActivity">
+	tools:context=".MainActivity">
 
 	<androidx.fragment.app.FragmentContainerView
 		android:id="@+id/fragmentContainerView"
@@ -16,7 +16,8 @@
 		app:layout_constraintBottom_toTopOf="@id/fragmentContainerBottomBarrier"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout="@layout/fragment_widgets" />
 
 	<androidx.constraintlayout.widget.Barrier
 		android:id="@+id/fragmentContainerBottomBarrier"

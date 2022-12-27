@@ -65,6 +65,9 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
             binding.bottomInsetSpace?.updateLayoutParams {
                 height = systemWindowInsets.bottom
             }
+            binding.navigationOverlayView?.updateLayoutParams {
+                height = systemWindowInsets.bottom
+            }
             val systemBarInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             val imeInsets = insets.getInsets(WindowInsetsCompat.Type.ime())
             WindowInsetsCompat.Builder(insets)
@@ -99,7 +102,7 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
 
     private fun setupViews() {
         val selectedItemId = selectedItemId
-        binding.navigationRail?.apply {
+        binding.navigationRailView?.apply {
             selectedItemId?.let { setSelectedItemId(it) }
             setOnItemSelectedListener { item ->
                 switchPage(item.itemId)
