@@ -4,7 +4,10 @@
 
 	<style name="AppTheme.NavigationOverlay" parent="LightAppTheme.NavigationOverlay" />
 
-	<style name="BaseLightAppTheme" parent="Theme.Material3.Light.NoActionBar" />
+	<style name="BaseLightAppTheme" parent="Theme.Material3.DynamicColors.Light">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
 
 	<style name="LightAppTheme" parent="BaseLightAppTheme">
 		<item name="android:statusBarColor">?colorPrimary</item>
@@ -16,7 +19,10 @@
 		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
 	</style>
 
-	<style name="BaseDarkAppTheme" parent="Theme.Material3.Dark.NoActionBar" />
+	<style name="BaseDarkAppTheme" parent="Theme.Material3.DynamicColors.Dark">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
 
 	<style name="DarkAppTheme" parent="BaseDarkAppTheme">
 		<item name="android:statusBarColor">@android:color/transparent</item>
