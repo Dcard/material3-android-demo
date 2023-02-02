@@ -1,6 +1,6 @@
 <resources>
 
-	<style name="LightAppTheme" parent="BaseLightAppTheme">
+	<style name="Theme.App.Light" parent="Base.Theme.App.Light">
 		<item name="android:statusBarColor">@android:color/transparent</item>
 		<item name="android:windowLightStatusBar">true</item>
 		<item name="android:navigationBarColor">@android:color/transparent</item>

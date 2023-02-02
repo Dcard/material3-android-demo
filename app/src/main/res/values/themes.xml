@@ -1,30 +1,30 @@
 <resources>
 
-	<style name="AppTheme" parent="LightAppTheme" />
+	<style name="Theme.App.DayNight" parent="Theme.App.Light" />
 
-	<style name="AppTheme.NavigationOverlay" parent="LightAppTheme.NavigationOverlay" />
+	<style name="Theme.App.DayNight.NavigationOverlay" parent="Theme.App.Light.NavigationOverlay" />
 
-	<style name="BaseLightAppTheme" parent="Theme.Material3.DynamicColors.Light">
+	<style name="Base.Theme.App.Light" parent="Theme.Material3.DynamicColors.Light">
 		<item name="windowActionBar">false</item>
 		<item name="windowNoTitle">true</item>
 	</style>
 
-	<style name="LightAppTheme" parent="BaseLightAppTheme">
+	<style name="Theme.App.Light" parent="Base.Theme.App.Light">
 		<item name="android:statusBarColor">?colorPrimary</item>
 		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
 		<item name="colorNavigationOverlay">@color/system_ui_overlay_dark</item>
 	</style>
 
-	<style name="LightAppTheme.NavigationOverlay">
+	<style name="Theme.App.Light.NavigationOverlay">
 		<item name="android:navigationBarColor">?colorNavigationOverlay</item>
 	</style>
 
-	<style name="BaseDarkAppTheme" parent="Theme.Material3.DynamicColors.Dark">
+	<style name="Base.Theme.App.Dark" parent="Theme.Material3.DynamicColors.Dark">
 		<item name="windowActionBar">false</item>
 		<item name="windowNoTitle">true</item>
 	</style>
 
-	<style name="DarkAppTheme" parent="BaseDarkAppTheme">
+	<style name="DarkAppTheme" parent="Base.Theme.App.Dark">
 		<item name="android:statusBarColor">@android:color/transparent</item>
 		<item name="android:navigationBarColor">@android:color/transparent</item>
 		<item name="colorNavigationOverlay">@color/system_ui_overlay_dark</item>
